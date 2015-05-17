@@ -16,6 +16,7 @@ defmodule ReactPhoenix.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/hello_world", HelloWorldController, :index
   end
 
   # Other scopes may use custom stacks.
