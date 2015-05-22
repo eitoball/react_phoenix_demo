@@ -17,6 +17,7 @@ defmodule ReactPhoenix.Router do
 
     get "/", PageController, :index
     get "/hello_world", HelloWorldController, :index
+    get "/comment", CommentController, :index
   end
 
   # Other scopes may use custom stacks.
