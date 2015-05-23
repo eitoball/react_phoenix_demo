@@ -21,7 +21,9 @@ defmodule ReactPhoenix.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", ReactPhoenix do
-  #   pipe_through :api
-  # end
+  scope "/comment", ReactPhoenix do
+    pipe_through :api
+
+    get "/comments", CommentController, :comments
+  end
 end
