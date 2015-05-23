@@ -12,6 +12,8 @@ $(function() {
   );
 });
 
+require('./comment.react');
+
 let App = {
 }
 
