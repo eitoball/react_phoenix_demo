@@ -25,5 +25,6 @@ defmodule ReactPhoenix.Router do
     pipe_through :api
 
     get "/comments", CommentController, :comments
+    post "/comments", CommentController, :create_comment
   end
 end
