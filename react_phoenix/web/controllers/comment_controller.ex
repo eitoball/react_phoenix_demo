@@ -10,10 +10,7 @@ defmodule ReactPhoenix.CommentController do
   end
 
   def comments(conn, _params) do
-    json conn, [
-      %{author: "Pete Hunt", text: "This is one comment"},
-      %{author: "Jordan Walke", text: "This is *another* comment"}
-    ]
+    json conn, Repo.all(Comment)
   end
 
   def create_comment(conn, params) do
